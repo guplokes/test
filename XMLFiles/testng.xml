@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!--<listeners>
+		<listener class-name="com.lms.utilities.ListenerTest"></listener>
+	 	<listener class-name="com.lms.utilities.AnnotationTransformer"></listener> 
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.lms.testCases.loginTest" />
+		 	<class name="com.lms.testCases.lmsTest" />
+		 	<class name="com.lms.testCases.lmsLocDetailTest" />
+		  
+		  <class name="com.lms.testCases.lmsPolicyLayerTest" /> 
+		  <class name="com.lms.testCases.lmsPolicyBlanketTest" /> 
+		 <class name="com.lms.testCases.lmsPerilLvlFinTest" /> 
+		 <class name="com.lms.testCases.lmsLocMasterTest" />
+		 
+		   	<class name="com.lms.testCases.lmsLocCoverageTest" /> 
+		   	<class name="com.lms.testCases.lmsLocFinTest" /> 
+		   
+		</classes>
+	</test>  -->
+
+<listeners>
+		<listener class-name="com.lms.utilities.Listener" />
+	</listeners>
+	<test thread-count="5" name="Test" group-by-instances="true">
+		<classes>
+
+
+			<class name="com.lms.testCases.LoginTest" />
+
+			<class name="com.lms.testCases.LmsTest" />
+
+			<class name="com.lms.testCases.lmsPolicyLayerTest" />
+
+			<class name="com.lms.testCases.lmsPolicyBlanketTest" />
+
+			<class name="com.lms.testCases.lmsPerilLevelFinancialTest" />
+
+			<class name="com.lms.testCases.lmsLocationMasterTest" />
+
+			<class name="com.lms.testCases.lmsLocationCoveragesTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
